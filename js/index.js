@@ -1,4 +1,5 @@
-// Navigation bar page scrolling behavior
+// Navigation Bar
+// Scrolling behavior
 document.querySelectorAll('a[href^="#"]').forEach((anchorTag) => {
   anchorTag.addEventListener("click", function (event) {
     event.preventDefault();

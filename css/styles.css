@@ -6,14 +6,22 @@ body {
   color: #efefef;
 }
 
+section {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
 h1,
 h2 {
   color: #ff5733;
 }
 
 hr {
-  color: #efefef;
+  border: none;
+  height: 1px;
+  background-color: #efefef;
   width: 80%;
+  margin: 20px auto;
 }
 
 /* Navigation Bar */
@@ -41,6 +49,7 @@ hr {
 
 .navbar li a {
   color: #efefef;
+  font-size: 20px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -51,7 +60,7 @@ hr {
 
 /* About Me */
 .about-container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 40px;
 }
@@ -90,7 +99,18 @@ hr {
 
 /* Projects */
 .projects-container h1 {
+  margin-bottom: 20px;
   text-align: center;
+}
+
+.card {
+  height: 100%;
+  margin: auto 40px;
+}
+
+.card-body .btn.btn-success {
+  background-color: #ff5733;
+  border-color: #ff5733;
 }
 
 .card-text {
@@ -101,17 +121,21 @@ hr {
   text-align: center;
 }
 
-/* Contact */
-.contact-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 40px;
+.music-player {
+  display: flex;
+  justify-content: flex-end;
+  margin: 40px;
 }
 
+/* Contact */
 .contact-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
+}
+
+.contact-header {
+  text-align: center;
 }
 
 .contact-form {
