@@ -127,6 +127,12 @@ hr {
   margin: 40px;
 }
 
+.music-player iframe {
+  border: 0;
+  width: 450px;
+  height: 450px;
+}
+
 /* Contact */
 .contact-container {
   max-width: 800px;
