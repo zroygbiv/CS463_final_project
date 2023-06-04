@@ -12,3 +12,21 @@ document.querySelectorAll('a[href^="#"]').forEach((anchorTag) => {
     }
   });
 });
+
+// Contact Me
+// Submission modal
+document.addEventListener("DOMContentLoaded", function () {
+  // Get contact form element
+  const contactForm = document.querySelector(".contact-form");
+
+  // Attach a event listener to the form
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault(); 
+
+    const successModal = new bootstrap.Modal(
+      document.getElementById("successModal")
+    );
+    successModal.show();
+    contactForm.reset();
+  });
+});

@@ -1,9 +1,22 @@
+:root {
+  --primary-color: #ff5733;
+  --secondary-color: #efefef;
+  --background-color: #1c1c1c;
+  --navbar-bg-color: #333333;
+  --link-color: #ffa500;
+  --button-bg-color: #28a745;
+  --button-hover-color: #23933b;
+  --button-active-color: #19692c;
+  --card-bg-color: #f3f0e6;
+  --text-color: #1c1c1c;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #1c1c1c;
+  background-color: var(--background-color);
   font-family: "Roboto", sans-serif;
-  color: #efefef;
+  color: var(--secondary-color);
 }
 
 section {
@@ -13,21 +26,29 @@ section {
 
 h1,
 h2 {
-  color: #ff5733;
+  color: var(--primary-color);
+  margin-bottom: 60px;
 }
 
 hr {
   border: none;
   height: 1px;
-  background-color: #efefef;
+  background-color: var(--secondary-color);
   width: 80%;
   margin: 20px auto;
 }
 
+.section-header {
+  text-align: center;
+  border: 2px solid;
+  padding: 10px;
+  margin: 40px 100px;
+}
+
 /* Navigation Bar */
 .navbar {
-  background-color: #333333;
-  color: #efefef;
+  background-color: var(--navbar-bg-color);
+  color: var(--secondary-color);
   display: flex;
   font-size: 16px;
   justify-content: flex-end;
@@ -48,14 +69,14 @@ hr {
 }
 
 .navbar li a {
-  color: #efefef;
+  color: var(--secondary-color);
   font-size: 20px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .navbar li a:hover {
-  color: #ffa500;
+  color: var(--link-color);
 }
 
 /* About Me */
@@ -76,7 +97,7 @@ hr {
 }
 
 .about-image img {
-  border: 3px solid #ff5733;
+  border: 3px solid var(--primary-color);
   height: auto;
   width: 100%;
 }
@@ -99,7 +120,6 @@ hr {
 
 /* Projects */
 .projects-container h1 {
-  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -108,29 +128,84 @@ hr {
   margin: auto 40px;
 }
 
-.card-body .btn.btn-success {
-  background-color: #ff5733;
-  border-color: #ff5733;
+.card-body {
+  background-color: var(--card-bg-color);
 }
 
 .card-text {
-  color: #1c1c1c;
+  color: var(--text-color);
 }
+
+.github-button {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--button-bg-color);
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.github-button:active {
+  background-color: var(--button-active-color);
+}
+
 /* Previous Work */
-.previous-work-container h1 {
-  text-align: center;
+.previous-work-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-form {
+  color: var(--secondary-color);
+  margin-left: 40px;
+  width: calc(100% - 480px);
+}
+
+.resume-form h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.resume-form h3 {
+  color: var(--link-color);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.resume-form p,
+.resume-form ul,
+.resume-form li {
+  margin: 0;
+  font-size: 14px;
+}
+
+.resume-form ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
 }
 
 .music-player {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
   margin: 40px;
 }
 
 .music-player iframe {
-  border: 0;
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 60px;
 }
 
 /* Contact */
@@ -138,10 +213,6 @@ hr {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
-}
-
-.contact-header {
-  text-align: center;
 }
 
 .contact-form {
@@ -187,4 +258,8 @@ hr {
 .form-group button:hover,
 .form-group button:focus {
   background-color: #e85a4f;
+}
+
+.modal-content {
+  color: black;
 }
