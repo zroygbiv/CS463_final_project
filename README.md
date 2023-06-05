@@ -28,3 +28,11 @@ The "Previous Work" section highlights my education, programming languages and t
 ## Contact
 
 The "Contact" section provides a contact form to get in touch with me. It includes fields for name, email, and a message. When the form is submitted, a success message is displayed using a Bootstrap modal.
+
+Resources:
+
+- [Google Fonts](https://fonts.google.com/specimen/Roboto)
+- [Google Color Picker](https://htmlcolors.com/google-color-picker)
+- [Bootstrap Documentation](https://getbootstrap.com/docs/4.0/components/modal/)
+- [Embed a BandCamp Media Player](https://get.bandcamp.help/hc/en-us/articles/360013561254-How-do-I-create-a-Bandcamp-embedded-player-#:~:text=To%20create%20an%20embedded%20player,your%20merchandise%2C%20and%20so%20on)
+- [Color Hunt](https://colorhunt.co/palette/be5a83e06469f2b6a0dedea7)
