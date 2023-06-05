@@ -119,6 +119,11 @@ hr {
 }
 
 /* Projects */
+.projects-container .row {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
 .projects-container h1 {
   text-align: center;
 }
@@ -161,7 +166,30 @@ hr {
 .previous-work-container {
   display: flex;
   justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: var(--page-background-color);
+  color: var(--secondary-color);
+  padding: 20px;
+}
+
+.grid-item h2 {
+  margin-bottom: 10px;
+}
+
+.grid-item ul {
+  padding-left: 20px;
+}
+
 
 .resume-form {
   color: var(--secondary-color);
