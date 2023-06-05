@@ -111,13 +111,6 @@ hr {
   padding-left: 40px;
 }
 
-@media (max-width: 600px) {
-  .about {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
 /* Projects */
 .projects-container .row {
   margin-left: 80px;
@@ -188,7 +181,6 @@ hr {
 .resume-form {
   color: var(--secondary-color);
   margin-left: 40px;
-  width: calc(100% - 480px);
 }
 
 .resume-form h2 {
@@ -220,7 +212,7 @@ hr {
 .music-player {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   margin: 40px;
 }
 
@@ -284,4 +276,17 @@ hr {
 
 .modal-content {
   color: black;
+}
+
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 960px) {
+  .previous-work-container {
+    flex-direction: column;
+  }
 }
