@@ -35,7 +35,6 @@ Resources:
 - [Google Color Picker](https://htmlcolors.com/google-color-picker)
 - [Bootstrap Documentation](https://getbootstrap.com/docs/4.0/components/modal/)
 - [Embed a BandCamp Media Player](https://get.bandcamp.help/hc/en-us/articles/360013561254-How-do-I-create-a-Bandcamp-embedded-player-#:~:text=To%20create%20an%20embedded%20player,your%20merchandise%2C%20and%20so%20on)
--[An Interactive Guide to Keyframe Animations](https://www.joshwcomeau.com/animation/
-keyframe-animations/)
--[Font Awesome Icon Library](https://fontawesome.com/)
+- [An Interactive Guide to Keyframe Animations](https://www.joshwcomeau.com/animation/keyframe-animations/)
+- [Font Awesome Icon Library](https://fontawesome.com/)
 - [Color Hunt](https://colorhunt.co/palette/be5a83e06469f2b6a0dedea7)
