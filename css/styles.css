@@ -44,11 +44,10 @@ hr {
   border: 2px solid;
   padding: 10px;
   margin: 40px 100px;
-
 }
 
 .fade-in {
-  opacity: 1; 
+  opacity: 1;
 }
 
 /* Navigation Bar */
@@ -102,6 +101,11 @@ hr {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.about-header {
+  text-align: center;
+  border: 2px solid;
 }
 
 .about {
@@ -359,6 +363,7 @@ footer {
   color: var(--link-color);
 }
 
+/* Media Queries */
 @media (max-width: 600px) {
   .about {
     flex-direction: column;
