@@ -1,5 +1,13 @@
-// Navigation Bar
-// Scrolling behavior
+document.addEventListener("DOMContentLoaded", function () {
+  var body = document.querySelector("body");
+  body.style.opacity = "0";
+
+  setTimeout(function () {
+    body.style.transition = "opacity 0.6s ease";
+    body.style.opacity = "1";
+  }, 100);
+});
+
 document.querySelectorAll('a[href^="#"]').forEach((anchorTag) => {
   anchorTag.addEventListener("click", function (event) {
     event.preventDefault();
@@ -13,16 +21,10 @@ document.querySelectorAll('a[href^="#"]').forEach((anchorTag) => {
   });
 });
 
-// Contact Me
-// Submission modal
 document.addEventListener("DOMContentLoaded", function () {
-  // Get contact form element
   const contactForm = document.querySelector(".contact-form");
-
-  // Attach a event listener to the form
   contactForm.addEventListener("submit", function (event) {
-    event.preventDefault(); 
-
+    event.preventDefault();
     const successModal = new bootstrap.Modal(
       document.getElementById("successModal")
     );
