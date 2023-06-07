@@ -1,3 +1,4 @@
+// Fade in effect on page load
 document.addEventListener("DOMContentLoaded", function () {
   var body = document.querySelector("body");
   body.style.opacity = "0";
@@ -8,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 100);
 });
 
+// Smooth scrolling for anchor tags
 document.querySelectorAll('a[href^="#"]').forEach((anchorTag) => {
   anchorTag.addEventListener("click", function (event) {
     event.preventDefault();
@@ -21,6 +23,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchorTag) => {
   });
 });
 
+// Submit event listener for contact form
 document.addEventListener("DOMContentLoaded", function () {
   const contactForm = document.querySelector(".contact-form");
   contactForm.addEventListener("submit", function (event) {
