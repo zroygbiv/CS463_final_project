@@ -115,17 +115,12 @@ hr {
 
 .about-image {
   flex: 0 0 300px;
-  transition: transform 0.3s ease-in-out;
 }
 
 .about-image img {
   border: 3px solid var(--primary-color);
   height: auto;
   width: 100%;
-}
-
-.about-image:hover {
-  transform: scale(1.1);
 }
 
 .about-description {
